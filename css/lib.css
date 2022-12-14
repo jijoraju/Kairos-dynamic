@@ -1,0 +1,339 @@
+/* Main style components for the group project */
+
+/* variables */
+:root {
+  --min-width: 10%;
+  --c-red: #dc3545;
+  --c-dark: #343a40;
+  --c-green: #28a745;
+  --c-muted: #6c757d;
+  --c-white: #fff;
+  --c-light: #f8f9fa;
+  --c-blue: #007bff;
+  --c-yellow: #ffc107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+/* conatainers */
+
+.container {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.container-full {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* layout design */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.column {
+  flex: 1 0 0%;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links .link-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar .nav-links .link-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-brand {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* width classes - total width is divided equally and each individual width will be 10% */
+
+.w-1 {
+  width: calc(var(--min-width) * 1);
+}
+
+.w-2 {
+  width: calc(var(--min-width) * 2);
+}
+
+.w-3 {
+  width: 30%;
+}
+
+.w-4 {
+  width: calc(var(--min-width) * 4);
+}
+
+.w-5 {
+  width: calc(var(--min-width) * 5);
+}
+
+.w-6 {
+  width: calc(var(--min-width) * 6);
+}
+
+.w-7 {
+  width: 70%;
+}
+.w-8 {
+  width: calc(var(--min-width) * 8);
+}
+.w-9 {
+  width: calc(var(--min-width) * 9);
+}
+.w-full {
+  width: calc(var(--min-width) * 10);
+}
+
+.h-1 {
+  height: calc(var(--min-width) * 1);
+}
+
+.h-2 {
+  height: calc(var(--min-width) * 2);
+}
+
+.h-3 {
+  height: calc(var(--min-width) * 3);
+}
+
+.h-4 {
+  height: calc(var(--min-width) * 4);
+}
+
+.h-5 {
+  height: calc(var(--min-width) * 5);
+}
+
+.h-6 {
+  height: calc(var(--min-width) * 6);
+}
+
+.h-7 {
+  height: calc(var(--min-width) * 7);
+}
+.h-8 {
+  height: calc(var(--min-width) * 8);
+}
+.h-9 {
+  height: calc(var(--min-width) * 9);
+}
+.h-full {
+  height: calc(var(--min-width) * 10);
+}
+
+/* Colors  */
+/* text colors */
+.txt-red {
+  color: var(--c-red);
+}
+
+.txr-dark {
+  color: var(--c-dark);
+}
+
+.txt-green {
+  color: var(--c-green);
+}
+.txt-muted {
+  color: var(--c-muted);
+}
+.txt-white {
+  color: var(--c-white);
+}
+.txt-light {
+  color: var(--c-light);
+}
+.txt-blue {
+  color: var(--c-blue);
+}
+.txt-yellow {
+  color: var(--c-yellow);
+}
+
+/* background colors */
+.bg-red {
+  background-color: var(--c-red);
+}
+
+.bg-dark {
+  background-color: var(--c-dark);
+}
+
+.bg-green {
+  background-color: var(--c-green);
+}
+.bg-muted {
+  background-color: var(--c-muted);
+}
+.bg-white {
+  background-color: var(--c-white);
+}
+.bg-light {
+  background-color: var(--c-light);
+}
+.bg-blue {
+  background-color: var(--c-blue);
+}
+.bg-yellow {
+  background-color: var(--c-yellow);
+}
+
+/* text relaed style */
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-capital {
+  text-transform: capitalize;
+}
+
+.txt-lower {
+  text-transform: lowercase;
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
+
+/* cards */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.card .row > * {
+  padding: 0;
+}
+
+.card .card-body {
+  padding: 30px;
+  height: 100%;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.img-flexible {
+  max-width: 100%;
+  height: auto;
+}
+
+/* inputs */
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+
+.form-input-label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* buttons */
+
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  color: #212121;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  padding: 0.675rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  transition: transform 0.2s;
+  border-radius: 0.375rem;
+  border-style: solid;
+  border-width: 0.125rem;
+  background: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.01);
+}
+
+.btn:focus {
+  outline: 0 solid transparent;
+}
+
+.btn-transperant {
+  border: 1px solid black;
+  color: rgb(1, 1, 1);
+  background-color: transparent;
+}
