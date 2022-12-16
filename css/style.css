@@ -21,6 +21,10 @@ nav {
 .card .card-body .content {
   text-align: justify;
 }
+#banner {
+  margin: 0 auto;
+  margin-top: 20px;
+}
 
 .section-title{
   margin-bottom: 40px;
@@ -34,6 +38,19 @@ nav {
 #banner .card {
   box-shadow: none;
   border-radius: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.slick-track {
+  display: flex;
+  align-items: stretch;
+}
+.slick-slide {
+  height: auto;
+  flex: 1;
 }
 
 #banner .card .card-body.flex {
@@ -44,6 +61,7 @@ nav {
 #banner .card img {
   height: 100%;
   object-fit: cover;
+  border-radius: 5px 0 0 5px;
 }
 
 #banner .card .card-body .caption {
@@ -69,6 +87,8 @@ nav {
 }
 
 .card .card-body .post-meta p {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 12px !important;
   text-transform: uppercase;
   text-align: justify;
@@ -184,6 +204,22 @@ footer p {
   height: 15px;
   width: 15px;
   padding-bottom: 2px;
+}
+
+.section-subhead {
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.section-subhead:after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 1px;
+  display: block;
 }
 
 #services {
