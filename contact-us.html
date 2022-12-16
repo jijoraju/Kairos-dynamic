@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/fifa23-logo-nav.svg" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/lib.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="navbar">
+          <h1 class="nav-brand"><a href="index.html">Kairos</a></h1>
+          <ul class="nav-links">
+            <li class="link-item"><a href="index.html">Home</a></li>
+            <li class="link-item"><a href="about.html">About Us</a></li>
+            <li class="link-item"><a href="blogs.html">Blogs</a></li>
+            <li class="link-item active">
+              <a href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <section class="banner contact">
+          <!-- image from unsplash https://unsplash.com/photos/6VhPY27jdps  -->
+          <img
+            src="img/image2.jpg"
+            alt="Contact us banner"
+            class="img-flexible"
+          />
+        </section>
+
+        <section id="contact-form">
+          <div class="row">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.101938250292!2d-80.5210874873369!3d43.47934297099045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf31d0cec9491%3A0x8bf5f60c306d2207!2sConestoga%20College%20-%20Waterloo!5e0!3m2!1sen!2sca!4v1670875144990!5m2!1sen!2sca"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="form-content">
+              <div class="row section-title">
+                <h3 class="txt-center">Send us a message</h3>
+              </div>
+              <form>
+                <div class="column">
+                  <label for="full name" class="form-input-label"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    name="full_name"
+                    id="full_name"
+                    aria-label="full name"
+                    class="form-input"
+                  />
+                  <span id="input-fullName" class="text-danger"></span>
+                </div>
+                <div class="column">
+                  <label for="email" class="form-input-label">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    aria-label="email"
+                    class="form-input"
+                  />
+				    <span id="input-email" class="text-danger"></span>
+                </div>
+                <div class="column">
+                  <label for="message" class="form-input-label">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    class="form-input"
+                  ></textarea>  
+				   <span id="input-message" class="text-danger"></span>
+                </div>
+                <div class="column">
+                  <button
+                    type="button"
+                    class="btn btn-transperant"
+                    onclick="formValidation()"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscribe-section">
+          <div class="subscribe-wrapper">
+            <div class="subscribe-content">
+              <div class="section-title">
+                <h2 class="white">Stay in touch</h2>
+                <p class="white">
+                  Subscribe to our newsletter and we'll keep you informed about
+                  Us.
+                </p>
+              </div>
+              <form action="">
+                <input type="email" placeholder="Your email" />
+                <button type="submit" class="submit-btn">Send</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        <h3>Kairos</h3>
+        <ul class="social-media">
+          <li>
+            <a href="https://facebook.com/kairos">
+              <!-- https://www.flaticon.com/free-icon/facebook-app-symbol_20837?term=facebook&page=1&position=1&page=1&position=1&related_id=20837&origin=style -->
+              <img src="img/icons/facebook.png" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/kairos">
+              <!-- https://www.flaticon.com/free-icon/instagram_1384031?term=instagram&page=1&position=5&page=1&position=5&related_id=1384031&origin=style -->
+              <img src="img/icons/instagram.png" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/kairos">
+              <!-- https://www.flaticon.com/free-icon/twitter_3128212?term=twitter&page=1&position=6&page=1&position=6&related_id=3128212&origin=search -->
+              <img src="img/icons/twitter.png" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/kairos">
+              <!-- https://www.flaticon.com/free-icon/youtube_1384086?term=youtube&page=1&position=12&page=1&position=12&related_id=1384086&origin=style -->
+              <img src="img/icons/youtube.png" alt="youtube" />
+            </a>
+          </li>
+        </ul>
+        <div class="footer-bottom">
+          <p class="txt-center">
+            Copyright &copy;2022, Designed by Anusha, Jijo, Nuthan, Shebin
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
