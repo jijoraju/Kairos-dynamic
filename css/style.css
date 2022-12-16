@@ -572,6 +572,37 @@ tr td:last-of-type{
   margin-top: 80px;
 }
 
+.faq-wrapper{
+  padding: 80px 150px;
+}
+
+.eachFaq {
+  padding-bottom: 20px;
+}
+/* .eachFaq.close h3:before{ 
+  content: '+'; 
+  width: 20px; height: 20px;
+  position: absolute;
+  top: 0; left: 0;
+}
+.eachFaq.open h3:before{ 
+  content: '-'; 
+  width: 20px; height: 20px;
+  position: absolute;
+  top: 0; left: 0;
+} */
+.accordion-content{
+  padding: 0 0 0 2em;
+  margin: 0 0 2em 0;
+  font-size: 1.25em;
+}
+.accordion-content p{ margin: 0; }
+.eachFaq .title{ cursor: pointer; }
+.eachFaq ul li {
+  list-style: square;
+}
+/* .eachFaq .title:hover{ color: blue; } */
+
 @media only screen and (max-width: 1024px) {
   .navbar {
     height: fit-content;
