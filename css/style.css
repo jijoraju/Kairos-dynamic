@@ -601,6 +601,37 @@ tr td:last-of-type{
 .eachFaq ul li {
   list-style: square;
 }
+
+.animation-area .ani-left{
+  opacity: 0;
+  margin-left: -100px;
+  transition: all 1.2s ease;
+}
+
+.animation-area .ani-left.normal{
+  opacity: 1;
+  margin-left: 0;
+}
+
+.animation-area .ani-right{
+  opacity: 0;
+  margin-right: -100px;
+  transition: all 1.2s ease;
+}
+
+.animation-area .ani-right.normal{
+  opacity: 1;
+}
+
+.animation-area .ani-fade{
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.animation-area .ani-fade.normal{
+  opacity: 1;
+  margin-right: 0;
+}
 /* .eachFaq .title:hover{ color: blue; } */
 
 @media only screen and (max-width: 1024px) {
